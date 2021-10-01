@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC17893D2706DC73004F1F3E /* SetVolumeRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17893C2706DC73004F1F3E /* SetVolumeRequestBody.swift */; };
+		AC5BF71B27058B1F00272F0F /* SpeakerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71A27058B1F00272F0F /* SpeakerClient.swift */; };
+		AC5BF71E27058BB700272F0F /* VolumeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71D27058BB700272F0F /* VolumeResponse.swift */; };
+		AC5BF7202705957E00272F0F /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71F2705957E00272F0F /* VolumeController.swift */; };
+		AC5BF7222705974C00272F0F /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF7212705974C00272F0F /* Throttler.swift */; };
 		AC9C326127050229008263B1 /* SpeakerKnobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326027050229008263B1 /* SpeakerKnobApp.swift */; };
 		AC9C326327050229008263B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326227050229008263B1 /* ContentView.swift */; };
 		AC9C32652705022C008263B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32642705022C008263B1 /* Assets.xcassets */; };
 		AC9C32682705022C008263B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32672705022C008263B1 /* Preview Assets.xcassets */; };
+		ACDE34CD27051B6E00720C58 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE34CC27051B6E00720C58 /* CircleView.swift */; };
+		ACDE34CF2705263D00720C58 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE34CE2705263D00720C58 /* Knob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC9C325D27050229008263B1 /* SpeakerKnob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakerKnob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC17893C2706DC73004F1F3E /* SetVolumeRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeRequestBody.swift; sourceTree = "<group>"; };
+		AC5BF71A27058B1F00272F0F /* SpeakerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerClient.swift; sourceTree = "<group>"; };
+		AC5BF71D27058BB700272F0F /* VolumeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeResponse.swift; sourceTree = "<group>"; };
+		AC5BF71F2705957E00272F0F /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
+		AC5BF7212705974C00272F0F /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		AC9C325D27050229008263B1 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C326027050229008263B1 /* SpeakerKnobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerKnobApp.swift; sourceTree = "<group>"; };
 		AC9C326227050229008263B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC9C32642705022C008263B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9C32672705022C008263B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACDE34CC27051B6E00720C58 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		ACDE34CE2705263D00720C58 /* Knob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5BF7232705981F00272F0F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BF7242705983800272F0F /* Library */,
+				ACDE34CC27051B6E00720C58 /* CircleView.swift */,
+				AC9C326227050229008263B1 /* ContentView.swift */,
+				ACDE34CE2705263D00720C58 /* Knob.swift */,
+				AC9C326027050229008263B1 /* SpeakerKnobApp.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AC5BF7242705983800272F0F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BF7212705974C00272F0F /* Throttler.swift */,
+				AC5BF71F2705957E00272F0F /* VolumeController.swift */,
+				AC5BF71A27058B1F00272F0F /* SpeakerClient.swift */,
+				AC5BF71D27058BB700272F0F /* VolumeResponse.swift */,
+				AC17893C2706DC73004F1F3E /* SetVolumeRequestBody.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		AC9C325427050229008263B1 = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +81,7 @@
 		AC9C325E27050229008263B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC9C325D27050229008263B1 /* SpeakerKnob.app */,
+				AC9C325D27050229008263B1 /* Knob.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +89,9 @@
 		AC9C325F27050229008263B1 /* SpeakerKnob */ = {
 			isa = PBXGroup;
 			children = (
-				AC9C326027050229008263B1 /* SpeakerKnobApp.swift */,
-				AC9C326227050229008263B1 /* ContentView.swift */,
 				AC9C32642705022C008263B1 /* Assets.xcassets */,
 				AC9C32662705022C008263B1 /* Preview Content */,
+				AC5BF7232705981F00272F0F /* Source */,
 			);
 			path = SpeakerKnob;
 			sourceTree = "<group>";
@@ -77,6 +114,7 @@
 				AC9C325927050229008263B1 /* Sources */,
 				AC9C325A27050229008263B1 /* Frameworks */,
 				AC9C325B27050229008263B1 /* Resources */,
+				AC17893B2706D9EE004F1F3E /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -84,7 +122,7 @@
 			);
 			name = SpeakerKnob;
 			productName = SpeakerKnob;
-			productReference = AC9C325D27050229008263B1 /* SpeakerKnob.app */;
+			productReference = AC9C325D27050229008263B1 /* Knob.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,13 +170,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC17893B2706D9EE004F1F3E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC9C325927050229008263B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDE34CD27051B6E00720C58 /* CircleView.swift in Sources */,
 				AC9C326327050229008263B1 /* ContentView.swift in Sources */,
+				AC5BF7222705974C00272F0F /* Throttler.swift in Sources */,
 				AC9C326127050229008263B1 /* SpeakerKnobApp.swift in Sources */,
+				ACDE34CF2705263D00720C58 /* Knob.swift in Sources */,
+				AC5BF71E27058BB700272F0F /* VolumeResponse.swift in Sources */,
+				AC5BF7202705957E00272F0F /* VolumeController.swift in Sources */,
+				AC5BF71B27058B1F00272F0F /* SpeakerClient.swift in Sources */,
+				AC17893D2706DC73004F1F3E /* SetVolumeRequestBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +343,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnob;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Knob;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,14 +373,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnob;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Knob;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

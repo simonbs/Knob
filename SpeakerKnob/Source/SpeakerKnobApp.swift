@@ -11,7 +11,7 @@ import SwiftUI
 struct SpeakerKnobApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(speakerBaseURL: URL(string: "http://192.168.1.99:8080")!)
         }
     }
 }
