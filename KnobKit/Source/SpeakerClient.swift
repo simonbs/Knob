@@ -15,14 +15,14 @@ public final class SpeakerClient: APIClient {
     }
 
     @discardableResult
-    public func loadVolume(_ completion: @escaping (Result<VolumeResponse, APIClientError>) -> Void) -> URLSessionTask? {
+    public func loadVolume(completion: @escaping (Result<VolumeResponse, APIClientError>) -> Void) -> URLSessionTask? {
         let path = "/BeoZone/Zone/Sound/Volume"
         let request = makeRequest(path: path)
         return send(request, decoding: VolumeResponse.self, completion: completion)
     }
 
     @discardableResult
-    public func setVolume(_ volume: Int, _ completion: @escaping (Result<Void, APIClientError>) -> Void) -> URLSessionTask? {
+    public func setVolume(_ volume: Int, completion: @escaping (Result<Void, APIClientError>) -> Void) -> URLSessionTask? {
         let path = "/BeoZone/Zone/Sound/Volume/Speaker/Level"
         let requestBody = SetVolumeRequestBody(level: volume)
         let requestResult = makeRequest(httpMethod: "PUT", path: path, body: requestBody)

@@ -55,17 +55,14 @@ final class VolumeController: ObservableObject {
 private extension VolumeController {
     private func setOptimisticVolume(toPercentage percentage: Double) {
         if let volumeResponse = volumeResponse {
-            let volumeRange = volumeResponse.volume.speaker.range
-            let volume = volumeRange.minimum + Int(Double(volumeRange.maximum - volumeRange.minimum) * percentage)
-            optimisticVolume = volume
+            optimisticVolume = volumeResponse.volume.speaker.volumeLevel(fromPercentage: percentage)
             queueOptimisticVolumeIfNecessary()
         }
     }
 
     private func updateVolumePercentageFromOptimisticVolume() {
         if let volumeResponse = volumeResponse {
-            let volumeRange = volumeResponse.volume.speaker.range
-            volumePercentage = Double(optimisticVolume - volumeRange.minimum) / Double(volumeRange.maximum - volumeRange.minimum)
+            volumePercentage = volumeResponse.volume.speaker.levelPercentage
         }
     }
 

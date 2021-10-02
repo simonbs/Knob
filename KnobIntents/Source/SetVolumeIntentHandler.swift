@@ -12,8 +12,9 @@ final class SetVolumeIntentHandler: NSObject, SetVolumeIntentHandling {
     private let client = SpeakerClient(baseURL: Config.speakerBaseURL)
 
     func handle(intent: SetVolumeIntent, completion: @escaping (SetVolumeIntentResponse) -> Void) {
-        if let volume = intent.volume?.intValue {
-            client.setVolume(volume) { result in
+        if let percentage = intent.volume?.doubleValue {
+            let normalizedPercentage = percentage / 100
+            setVolume(toPercentage: normalizedPercentage) { result in
                 switch result {
                 case .success:
                     let response = SetVolumeIntentResponse(code: .success, userActivity: nil)
@@ -40,6 +41,20 @@ final class SetVolumeIntentHandler: NSObject, SetVolumeIntentHandling {
             }
         } else {
             completion(.needsValue())
+        }
+    }
+}
+
+private extension SetVolumeIntentHandler {
+    private func setVolume(toPercentage percentage: Double, completion: @escaping (Result<Void, APIClientError>) -> Void) {
+        client.loadVolume { loadVolumeResult in
+            switch loadVolumeResult {
+            case .success(let volumeResponse):
+                let volume = volumeResponse.volume.speaker.volumeLevel(fromPercentage: percentage)
+                self.client.setVolume(volume, completion: completion)
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
     }
 }

@@ -24,3 +24,13 @@ public struct VolumeResponse: Codable {
 
     public let volume: Volume
 }
+
+public extension VolumeResponse.Volume.Speaker {
+    var levelPercentage: Double {
+        return Double(level - range.minimum) / Double(range.maximum - range.minimum)
+    }
+
+    func volumeLevel(fromPercentage percentage: Double) -> Int {
+        return range.minimum + Int(round(Double(range.maximum - range.minimum) * percentage))
+    }
+}
