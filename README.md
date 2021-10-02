@@ -1,8 +1,14 @@
 # Knob
 
+![](https://raw.githubusercontent.com/simonbs/Knob/main/appicon.png)
+
 Volume knob for Beoplay speakers. The app communicates with the Beoplay speaker over WiFi. Tested with a Beoplay A6.
 
-<img width="275" src="https://raw.githubusercontent.com/simonbs/Knob/main/screenshot1.PNG?token=AAGK4E4SICXNRQR4WNF3P4LBLBXCO"/> <img width="275" src="https://raw.githubusercontent.com/simonbs/Knob/main/screenshot2.PNG?token=AAGK4EZIQCN5DL2PNEYHMNDBLBXCU"/>
+## Features
+
+It's really just a single screen with a huge volume knob. Twist the knob to adjust the volume. There's also two Shortcuts actons: Set Volume and Get Volume.
+
+<img width="275" src="https://raw.githubusercontent.com/simonbs/Knob/main/screenshot1.PNG"/> <img width="275" src="https://raw.githubusercontent.com/simonbs/Knob/main/screenshot2.PNG"/>
 
 ## Setup
 
