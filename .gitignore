@@ -17,3 +17,7 @@ xcuserdata
 *.bcsymbolmap
 
 *.hmap
+
+Gemfile
+Gemfile.lock
+fastlane
