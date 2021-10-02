@@ -6,7 +6,7 @@
 //
 
 import Combine
-import SwiftUI
+import SpeakerKnobKit
 
 final class VolumeController: ObservableObject {
     @Published var volumePercentage: Double = 0 {

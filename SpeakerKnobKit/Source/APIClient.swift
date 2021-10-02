@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum APIClientError: LocalizedError {
+public enum APIClientError: LocalizedError {
     case networkError(Error)
     case invalidResponse
     case invalidStatusCode(Int)
@@ -16,7 +16,7 @@ enum APIClientError: LocalizedError {
     case decodingFailed(DecodingError)
     case unknown(Error)
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .networkError(let error):
             return "Network error: \(error.localizedDescription)"

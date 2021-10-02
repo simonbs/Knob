@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SetVolumeRequestBody: Codable {
-    let level: Int
+public struct SetVolumeRequestBody: Codable {
+    public let level: Int
 }
