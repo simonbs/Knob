@@ -15,6 +15,6 @@ struct ErrorView: View {
         VStack(spacing: 20) {
             Text(message).multilineTextAlignment(.center)
             Button(L10n.ErrorView.RetryButton.title, action: onRetry)
-        }
+        }.padding()
     }
 }
