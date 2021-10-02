@@ -13,9 +13,6 @@
 			<key>IntentsSupported</key>
 			<array>
 				<string>GetVolumeIntent</string>
-				<string>INSearchForMessagesIntent</string>
-				<string>INSendMessageIntent</string>
-				<string>INSetMessageAttributeIntent</string>
 				<string>SetVolumeIntent</string>
 			</array>
 		</dict>
