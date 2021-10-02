@@ -30,7 +30,7 @@
 			<key>INIntentKeyParameter</key>
 			<string>volume</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>6</integer>
+			<integer>8</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key>volume</key>
@@ -107,7 +107,7 @@
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>6</integer>
+					<integer>8</integer>
 					<key>INIntentParameterType</key>
 					<string>Decimal</string>
 					<key>INIntentParameterUnsupportedReasons</key>
@@ -169,6 +169,89 @@
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>Set</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>download</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Get volume of the speaker as a percentage between its minimum and maximum volume.</string>
+			<key>INIntentDescriptionID</key>
+			<string>ATPjC6</string>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
+			<key>INIntentLastParameterTag</key>
+			<integer>3</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key></key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Get Volume</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>PjK5Vk</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>GetVolume</string>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>The volume is ${volume}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>rJZITm</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>The volume is ${volume}</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>QsRXId</string>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>5</integer>
+				<key>INIntentResponseOutput</key>
+				<string>volume</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Volume</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>HbklBG</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>volume</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>5</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>Integer</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Get Volume</string>
+			<key>INIntentTitleID</key>
+			<string>FXnR5R</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Get</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

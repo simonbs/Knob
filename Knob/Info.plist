@@ -4,6 +4,7 @@
 <dict>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>GetVolumeIntent</string>
 		<string>SetVolumeIntent</string>
 	</array>
 </dict>

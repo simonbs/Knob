@@ -17,6 +17,7 @@
 		AC6299F2270895E5004F646C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AC6299EF270895E0004F646C /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		AC6299F527089745004F646C /* SetVolumeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */; };
 		AC6299FA270898DB004F646C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299F9270898DB004F646C /* Config.swift */; };
+		AC6299FC27089C14004F646C /* GetVolumeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299FB27089C14004F646C /* GetVolumeIntentHandler.swift */; };
 		AC9C326127050229008263B1 /* KnobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326027050229008263B1 /* KnobApp.swift */; };
 		AC9C326327050229008263B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326227050229008263B1 /* ContentView.swift */; };
 		AC9C32652705022C008263B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32642705022C008263B1 /* Assets.xcassets */; };
@@ -98,6 +99,7 @@
 		AC6299F327089658004F646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeIntentHandler.swift; sourceTree = "<group>"; };
 		AC6299F9270898DB004F646C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AC6299FB27089C14004F646C /* GetVolumeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVolumeIntentHandler.swift; sourceTree = "<group>"; };
 		AC9C325D27050229008263B1 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C326027050229008263B1 /* KnobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobApp.swift; sourceTree = "<group>"; };
 		AC9C326227050229008263B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				AC6299E5270895BB004F646C /* IntentHandler.swift */,
 				AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */,
+				AC6299FB27089C14004F646C /* GetVolumeIntentHandler.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				AC6299F2270895E5004F646C /* Intents.intentdefinition in Sources */,
 				AC6299E6270895BB004F646C /* IntentHandler.swift in Sources */,
 				AC6299F527089745004F646C /* SetVolumeIntentHandler.swift in Sources */,
+				AC6299FC27089C14004F646C /* GetVolumeIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
