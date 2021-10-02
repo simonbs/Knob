@@ -20,13 +20,7 @@ final class VolumeController: ObservableObject {
     private let client: SpeakerClient
     private var volumeResponse: VolumeResponse?
     private var actualVolume = 0
-    private var optimisticVolume = 0 {
-        didSet {
-            if optimisticVolume != oldValue {
-                updateVolumePercentageFromOptimisticVolume()
-            }
-        }
-    }
+    private var optimisticVolume = 0
     private var queuedVolume = 0
     private let throttler = Throttler(delay: 1)
     private var isSendingVolume = false
@@ -89,11 +83,13 @@ private extension VolumeController {
                 switch result {
                 case .success:
                     self.isSendingVolume = false
+                    self.actualVolume = self.optimisticVolume
                     self.queueOptimisticVolumeIfNecessary()
                 case .failure(let error):
                     print(error)
                     self.isSendingVolume = false
                     self.optimisticVolume = self.actualVolume
+                    self.updateVolumePercentageFromOptimisticVolume()
                 }
             }
         }
