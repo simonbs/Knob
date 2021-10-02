@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		AC5BF7202705957E00272F0F /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71F2705957E00272F0F /* VolumeController.swift */; };
 		AC5BF7222705974C00272F0F /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF7212705974C00272F0F /* Throttler.swift */; };
+		AC6299E3270895BB004F646C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6299E2270895BB004F646C /* Intents.framework */; };
+		AC6299E6270895BB004F646C /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299E5270895BB004F646C /* IntentHandler.swift */; };
+		AC6299EA270895BB004F646C /* KnobIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC6299E0270895BB004F646C /* KnobIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC6299F0270895E0004F646C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AC6299EF270895E0004F646C /* Intents.intentdefinition */; };
+		AC6299F1270895E4004F646C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AC6299EF270895E0004F646C /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		AC6299F2270895E5004F646C /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AC6299EF270895E0004F646C /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		AC6299F527089745004F646C /* SetVolumeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */; };
+		AC6299FA270898DB004F646C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299F9270898DB004F646C /* Config.swift */; };
 		AC9C326127050229008263B1 /* KnobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326027050229008263B1 /* KnobApp.swift */; };
 		AC9C326327050229008263B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326227050229008263B1 /* ContentView.swift */; };
 		AC9C32652705022C008263B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32642705022C008263B1 /* Assets.xcassets */; };
@@ -28,6 +36,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC6299E8270895BB004F646C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9C325527050229008263B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC6299DF270895BB004F646C;
+			remoteInfo = KnobIntents;
+		};
+		AC6299F727089786004F646C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9C325527050229008263B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF92297270893A2004F68E3;
+			remoteInfo = KnobKit;
+		};
 		ACF9229C270893A2004F68E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9C325527050229008263B1 /* Project object */;
@@ -38,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AC6299EE270895BB004F646C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC6299EA270895BB004F646C /* KnobIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACF922A3270893A2004F68E3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +90,14 @@
 		AC5BF71D27058BB700272F0F /* VolumeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeResponse.swift; sourceTree = "<group>"; };
 		AC5BF71F2705957E00272F0F /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
 		AC5BF7212705974C00272F0F /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		AC6299E0270895BB004F646C /* KnobIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KnobIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6299E2270895BB004F646C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		AC6299E5270895BB004F646C /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		AC6299E7270895BB004F646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6299EF270895E0004F646C /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		AC6299F327089658004F646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVolumeIntentHandler.swift; sourceTree = "<group>"; };
+		AC6299F9270898DB004F646C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		AC9C325D27050229008263B1 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C326027050229008263B1 /* KnobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobApp.swift; sourceTree = "<group>"; };
 		AC9C326227050229008263B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +114,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC6299DD270895BB004F646C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6299E3270895BB004F646C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9C325A27050229008263B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,11 +163,39 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		AC6299E1270895BB004F646C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6299E2270895BB004F646C /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC6299E4270895BB004F646C /* KnobIntents */ = {
+			isa = PBXGroup;
+			children = (
+				AC6299F62708974A004F646C /* Source */,
+				AC6299E7270895BB004F646C /* Info.plist */,
+			);
+			path = KnobIntents;
+			sourceTree = "<group>";
+		};
+		AC6299F62708974A004F646C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AC6299E5270895BB004F646C /* IntentHandler.swift */,
+				AC6299F427089745004F646C /* SetVolumeIntentHandler.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		AC9C325427050229008263B1 = {
 			isa = PBXGroup;
 			children = (
 				AC9C325F27050229008263B1 /* Knob */,
+				AC6299E4270895BB004F646C /* KnobIntents */,
 				ACF92299270893A2004F68E3 /* KnobKit */,
+				AC6299E1270895BB004F646C /* Frameworks */,
 				AC9C325E27050229008263B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +205,7 @@
 			children = (
 				AC9C325D27050229008263B1 /* Knob.app */,
 				ACF92298270893A2004F68E3 /* KnobKit.framework */,
+				AC6299E0270895BB004F646C /* KnobIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,10 +213,11 @@
 		AC9C325F27050229008263B1 /* Knob */ = {
 			isa = PBXGroup;
 			children = (
+				AC6299F327089658004F646C /* Info.plist */,
+				ACF9228D270884B5004F68E3 /* Localizable.strings */,
 				AC9C32642705022C008263B1 /* Assets.xcassets */,
 				AC9C32662705022C008263B1 /* Preview Content */,
 				AC5BF7232705981F00272F0F /* Source */,
-				ACF9228D270884B5004F68E3 /* Localizable.strings */,
 			);
 			path = Knob;
 			sourceTree = "<group>";
@@ -155,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF922A4270893A7004F68E3 /* Source */,
+				AC6299EF270895E0004F646C /* Intents.intentdefinition */,
 				ACF9229A270893A2004F68E3 /* KnobKit.h */,
 			);
 			path = KnobKit;
@@ -163,6 +243,7 @@
 		ACF922A4270893A7004F68E3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AC6299F9270898DB004F646C /* Config.swift */,
 				AC5BF71A27058B1F00272F0F /* SpeakerClient.swift */,
 				AC5BF71D27058BB700272F0F /* VolumeResponse.swift */,
 				AC17893C2706DC73004F1F3E /* SetVolumeRequestBody.swift */,
@@ -185,6 +266,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AC6299DF270895BB004F646C /* KnobIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6299EB270895BB004F646C /* Build configuration list for PBXNativeTarget "KnobIntents" */;
+			buildPhases = (
+				AC6299DC270895BB004F646C /* Sources */,
+				AC6299DD270895BB004F646C /* Frameworks */,
+				AC6299DE270895BB004F646C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC6299F827089786004F646C /* PBXTargetDependency */,
+			);
+			name = KnobIntents;
+			productName = KnobIntents;
+			productReference = AC6299E0270895BB004F646C /* KnobIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AC9C325C27050229008263B1 /* Knob */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC9C326B2705022C008263B1 /* Build configuration list for PBXNativeTarget "Knob" */;
@@ -194,11 +293,13 @@
 				AC9C325B27050229008263B1 /* Resources */,
 				ACF922A3270893A2004F68E3 /* Embed Frameworks */,
 				AC17893B2706D9EE004F1F3E /* SwiftLint */,
+				AC6299EE270895BB004F646C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				ACF9229D270893A2004F68E3 /* PBXTargetDependency */,
+				AC6299E9270895BB004F646C /* PBXTargetDependency */,
 			);
 			name = Knob;
 			productName = SpeakerKnob;
@@ -233,6 +334,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					AC6299DF270895BB004F646C = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					AC9C325C27050229008263B1 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -255,12 +359,20 @@
 			projectRoot = "";
 			targets = (
 				AC9C325C27050229008263B1 /* Knob */,
+				AC6299DF270895BB004F646C /* KnobIntents */,
 				ACF92297270893A2004F68E3 /* KnobKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC6299DE270895BB004F646C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9C325B27050229008263B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +414,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC6299DC270895BB004F646C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6299F2270895E5004F646C /* Intents.intentdefinition in Sources */,
+				AC6299E6270895BB004F646C /* IntentHandler.swift in Sources */,
+				AC6299F527089745004F646C /* SetVolumeIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9C325927050229008263B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +431,7 @@
 				ACDE34CD27051B6E00720C58 /* CircleView.swift in Sources */,
 				AC9C326327050229008263B1 /* ContentView.swift in Sources */,
 				AC5BF7222705974C00272F0F /* Throttler.swift in Sources */,
+				AC6299F1270895E4004F646C /* Intents.intentdefinition in Sources */,
 				AC9C326127050229008263B1 /* KnobApp.swift in Sources */,
 				ACDE34CF2705263D00720C58 /* Knob.swift in Sources */,
 				ACF9228C27088481004F68E3 /* ErrorView.swift in Sources */,
@@ -324,13 +447,25 @@
 				ACF922A52708940F004F68E3 /* SpeakerClient.swift in Sources */,
 				ACF922A62708940F004F68E3 /* APIClient.swift in Sources */,
 				ACF922A82708940F004F68E3 /* VolumeResponse.swift in Sources */,
+				AC6299F0270895E0004F646C /* Intents.intentdefinition in Sources */,
 				ACF922A72708940F004F68E3 /* SetVolumeRequestBody.swift in Sources */,
+				AC6299FA270898DB004F646C /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC6299E9270895BB004F646C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC6299DF270895BB004F646C /* KnobIntents */;
+			targetProxy = AC6299E8270895BB004F646C /* PBXContainerItemProxy */;
+		};
+		AC6299F827089786004F646C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF92297270893A2004F68E3 /* KnobKit */;
+			targetProxy = AC6299F727089786004F646C /* PBXContainerItemProxy */;
+		};
 		ACF9229D270893A2004F68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ACF92297270893A2004F68E3 /* KnobKit */;
@@ -339,6 +474,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AC6299EC270895BB004F646C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NQFWJHC63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KnobIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KnobIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.Knob.KnobIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC6299ED270895BB004F646C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8NQFWJHC63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KnobIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KnobIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.Knob.KnobIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AC9C32692705022C008263B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -467,6 +652,7 @@
 				DEVELOPMENT_TEAM = 8NQFWJHC63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Knob/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,6 +684,7 @@
 				DEVELOPMENT_TEAM = 8NQFWJHC63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Knob/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +707,7 @@
 		ACF922A1270893A2004F68E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -550,6 +738,7 @@
 		ACF922A2270893A2004F68E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -580,6 +769,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC6299EB270895BB004F646C /* Build configuration list for PBXNativeTarget "KnobIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6299EC270895BB004F646C /* Debug */,
+				AC6299ED270895BB004F646C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC9C325827050229008263B1 /* Build configuration list for PBXProject "Knob" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
