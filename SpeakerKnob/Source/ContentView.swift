@@ -38,6 +38,8 @@ struct ContentView: View {
             }
         }.onAppear {
             loadVolume()
+        }.onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            loadVolume()
         }
     }
 }
