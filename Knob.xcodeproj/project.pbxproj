@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC5BF7202705957E00272F0F /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71F2705957E00272F0F /* VolumeController.swift */; };
 		AC5BF7222705974C00272F0F /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF7212705974C00272F0F /* Throttler.swift */; };
-		AC9C326127050229008263B1 /* SpeakerKnobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326027050229008263B1 /* SpeakerKnobApp.swift */; };
+		AC9C326127050229008263B1 /* KnobApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326027050229008263B1 /* KnobApp.swift */; };
 		AC9C326327050229008263B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C326227050229008263B1 /* ContentView.swift */; };
 		AC9C32652705022C008263B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32642705022C008263B1 /* Assets.xcassets */; };
 		AC9C32682705022C008263B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C32672705022C008263B1 /* Preview Assets.xcassets */; };
@@ -58,7 +58,7 @@
 		AC5BF71F2705957E00272F0F /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
 		AC5BF7212705974C00272F0F /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
 		AC9C325D27050229008263B1 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9C326027050229008263B1 /* SpeakerKnobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerKnobApp.swift; sourceTree = "<group>"; };
+		AC9C326027050229008263B1 /* KnobApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobApp.swift; sourceTree = "<group>"; };
 		AC9C326227050229008263B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC9C32642705022C008263B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9C32672705022C008263B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				ACDE34CC27051B6E00720C58 /* CircleView.swift */,
 				AC9C326227050229008263B1 /* ContentView.swift */,
 				ACDE34CE2705263D00720C58 /* Knob.swift */,
-				AC9C326027050229008263B1 /* SpeakerKnobApp.swift */,
+				AC9C326027050229008263B1 /* KnobApp.swift */,
 				ACF9228B27088481004F68E3 /* ErrorView.swift */,
 			);
 			path = Source;
@@ -309,7 +309,7 @@
 				ACDE34CD27051B6E00720C58 /* CircleView.swift in Sources */,
 				AC9C326327050229008263B1 /* ContentView.swift in Sources */,
 				AC5BF7222705974C00272F0F /* Throttler.swift in Sources */,
-				AC9C326127050229008263B1 /* SpeakerKnobApp.swift in Sources */,
+				AC9C326127050229008263B1 /* KnobApp.swift in Sources */,
 				ACDE34CF2705263D00720C58 /* Knob.swift in Sources */,
 				ACF9228C27088481004F68E3 /* ErrorView.swift in Sources */,
 				AC5BF7202705957E00272F0F /* VolumeController.swift in Sources */,
