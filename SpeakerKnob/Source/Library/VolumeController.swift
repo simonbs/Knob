@@ -22,7 +22,7 @@ final class VolumeController: ObservableObject {
     private var actualVolume = 0
     private var optimisticVolume = 0
     private var queuedVolume = 0
-    private let throttler = Throttler(delay: 1)
+    private let throttler = Throttler(delay: 0.5)
     private var isSendingVolume = false
     private var cancellables: [AnyCancellable] = []
 
