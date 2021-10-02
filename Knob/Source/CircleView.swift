@@ -1,6 +1,6 @@
 //
 //  CircleView.swift
-//  SpeakerKnob
+//  Knob
 //
 //  Created by Simon on 30/09/2021.
 //

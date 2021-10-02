@@ -1,6 +1,6 @@
 //
 //  SetVolumeRequestBody.swift
-//  SpeakerKnob
+//  Knob
 //
 //  Created by Simon on 01/10/2021.
 //

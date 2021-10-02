@@ -1,12 +1,12 @@
 //
 //  VolumeController.swift
-//  SpeakerKnob
+//  Knob
 //
 //  Created by Simon on 30/09/2021.
 //
 
 import Combine
-import SpeakerKnobKit
+import KnobKit
 
 final class VolumeController: ObservableObject {
     @Published var volumePercentage: Double = 0 {

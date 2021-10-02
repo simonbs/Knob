@@ -18,9 +18,9 @@
 		ACF9228C27088481004F68E3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9228B27088481004F68E3 /* ErrorView.swift */; };
 		ACF9228E270884B5004F68E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACF9228D270884B5004F68E3 /* Localizable.strings */; };
 		ACF9229027088526004F68E3 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9228F27088526004F68E3 /* L10n.swift */; };
-		ACF9229B270893A2004F68E3 /* SpeakerKnobKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF9229A270893A2004F68E3 /* SpeakerKnobKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACF9229E270893A2004F68E3 /* SpeakerKnobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF92298270893A2004F68E3 /* SpeakerKnobKit.framework */; };
-		ACF9229F270893A2004F68E3 /* SpeakerKnobKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACF92298270893A2004F68E3 /* SpeakerKnobKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF9229B270893A2004F68E3 /* KnobKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF9229A270893A2004F68E3 /* KnobKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF9229E270893A2004F68E3 /* KnobKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF92298270893A2004F68E3 /* KnobKit.framework */; };
+		ACF9229F270893A2004F68E3 /* KnobKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACF92298270893A2004F68E3 /* KnobKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACF922A52708940F004F68E3 /* SpeakerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF71A27058B1F00272F0F /* SpeakerClient.swift */; };
 		ACF922A62708940F004F68E3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF92291270888C3004F68E3 /* APIClient.swift */; };
 		ACF922A72708940F004F68E3 /* SetVolumeRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17893C2706DC73004F1F3E /* SetVolumeRequestBody.swift */; };
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ACF9229F270893A2004F68E3 /* SpeakerKnobKit.framework in Embed Frameworks */,
+				ACF9229F270893A2004F68E3 /* KnobKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,8 +68,8 @@
 		ACF9228D270884B5004F68E3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		ACF9228F27088526004F68E3 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		ACF92291270888C3004F68E3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		ACF92298270893A2004F68E3 /* SpeakerKnobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeakerKnobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACF9229A270893A2004F68E3 /* SpeakerKnobKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakerKnobKit.h; sourceTree = "<group>"; };
+		ACF92298270893A2004F68E3 /* KnobKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KnobKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF9229A270893A2004F68E3 /* KnobKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF9229E270893A2004F68E3 /* SpeakerKnobKit.framework in Frameworks */,
+				ACF9229E270893A2004F68E3 /* KnobKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +117,8 @@
 		AC9C325427050229008263B1 = {
 			isa = PBXGroup;
 			children = (
-				AC9C325F27050229008263B1 /* SpeakerKnob */,
-				ACF92299270893A2004F68E3 /* SpeakerKnobKit */,
+				AC9C325F27050229008263B1 /* Knob */,
+				ACF92299270893A2004F68E3 /* KnobKit */,
 				AC9C325E27050229008263B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,12 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				AC9C325D27050229008263B1 /* Knob.app */,
-				ACF92298270893A2004F68E3 /* SpeakerKnobKit.framework */,
+				ACF92298270893A2004F68E3 /* KnobKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC9C325F27050229008263B1 /* SpeakerKnob */ = {
+		AC9C325F27050229008263B1 /* Knob */ = {
 			isa = PBXGroup;
 			children = (
 				AC9C32642705022C008263B1 /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 				AC5BF7232705981F00272F0F /* Source */,
 				ACF9228D270884B5004F68E3 /* Localizable.strings */,
 			);
-			path = SpeakerKnob;
+			path = Knob;
 			sourceTree = "<group>";
 		};
 		AC9C32662705022C008263B1 /* Preview Content */ = {
@@ -151,13 +151,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		ACF92299270893A2004F68E3 /* SpeakerKnobKit */ = {
+		ACF92299270893A2004F68E3 /* KnobKit */ = {
 			isa = PBXGroup;
 			children = (
 				ACF922A4270893A7004F68E3 /* Source */,
-				ACF9229A270893A2004F68E3 /* SpeakerKnobKit.h */,
+				ACF9229A270893A2004F68E3 /* KnobKit.h */,
 			);
-			path = SpeakerKnobKit;
+			path = KnobKit;
 			sourceTree = "<group>";
 		};
 		ACF922A4270893A7004F68E3 /* Source */ = {
@@ -178,16 +178,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF9229B270893A2004F68E3 /* SpeakerKnobKit.h in Headers */,
+				ACF9229B270893A2004F68E3 /* KnobKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AC9C325C27050229008263B1 /* SpeakerKnob */ = {
+		AC9C325C27050229008263B1 /* Knob */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC9C326B2705022C008263B1 /* Build configuration list for PBXNativeTarget "SpeakerKnob" */;
+			buildConfigurationList = AC9C326B2705022C008263B1 /* Build configuration list for PBXNativeTarget "Knob" */;
 			buildPhases = (
 				AC9C325927050229008263B1 /* Sources */,
 				AC9C325A27050229008263B1 /* Frameworks */,
@@ -200,14 +200,14 @@
 			dependencies = (
 				ACF9229D270893A2004F68E3 /* PBXTargetDependency */,
 			);
-			name = SpeakerKnob;
+			name = Knob;
 			productName = SpeakerKnob;
 			productReference = AC9C325D27050229008263B1 /* Knob.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ACF92297270893A2004F68E3 /* SpeakerKnobKit */ = {
+		ACF92297270893A2004F68E3 /* KnobKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACF922A0270893A2004F68E3 /* Build configuration list for PBXNativeTarget "SpeakerKnobKit" */;
+			buildConfigurationList = ACF922A0270893A2004F68E3 /* Build configuration list for PBXNativeTarget "KnobKit" */;
 			buildPhases = (
 				ACF92293270893A2004F68E3 /* Headers */,
 				ACF92294270893A2004F68E3 /* Sources */,
@@ -218,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = SpeakerKnobKit;
+			name = KnobKit;
 			productName = SpeakerKnobKit;
-			productReference = ACF92298270893A2004F68E3 /* SpeakerKnobKit.framework */;
+			productReference = ACF92298270893A2004F68E3 /* KnobKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC9C325827050229008263B1 /* Build configuration list for PBXProject "SpeakerKnob" */;
+			buildConfigurationList = AC9C325827050229008263B1 /* Build configuration list for PBXProject "Knob" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,8 +254,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC9C325C27050229008263B1 /* SpeakerKnob */,
-				ACF92297270893A2004F68E3 /* SpeakerKnobKit */,
+				AC9C325C27050229008263B1 /* Knob */,
+				ACF92297270893A2004F68E3 /* KnobKit */,
 			);
 		};
 /* End PBXProject section */
@@ -333,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		ACF9229D270893A2004F68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ACF92297270893A2004F68E3 /* SpeakerKnobKit */;
+			target = ACF92297270893A2004F68E3 /* KnobKit */;
 			targetProxy = ACF9229C270893A2004F68E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,7 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpeakerKnob/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Knob/Preview Content\"";
 				DEVELOPMENT_TEAM = 8NQFWJHC63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -478,8 +478,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnob;
-				PRODUCT_NAME = Knob;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.Knob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpeakerKnob/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Knob/Preview Content\"";
 				DEVELOPMENT_TEAM = 8NQFWJHC63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -509,8 +509,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnob;
-				PRODUCT_NAME = Knob;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.Knob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -536,7 +536,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnobKit;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.KnobKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -566,7 +566,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SpeakerKnobKit;
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.KnobKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -580,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC9C325827050229008263B1 /* Build configuration list for PBXProject "SpeakerKnob" */ = {
+		AC9C325827050229008263B1 /* Build configuration list for PBXProject "Knob" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC9C32692705022C008263B1 /* Debug */,
@@ -589,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC9C326B2705022C008263B1 /* Build configuration list for PBXNativeTarget "SpeakerKnob" */ = {
+		AC9C326B2705022C008263B1 /* Build configuration list for PBXNativeTarget "Knob" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC9C326C2705022C008263B1 /* Debug */,
@@ -598,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACF922A0270893A2004F68E3 /* Build configuration list for PBXNativeTarget "SpeakerKnobKit" */ = {
+		ACF922A0270893A2004F68E3 /* Build configuration list for PBXNativeTarget "KnobKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACF922A1270893A2004F68E3 /* Debug */,

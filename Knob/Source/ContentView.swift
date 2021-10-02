@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SpeakerKnob
+//  Knob
 //
 //  Created by Simon on 29/09/2021.
 //
