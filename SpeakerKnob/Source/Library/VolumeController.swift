@@ -31,7 +31,7 @@ final class VolumeController: ObservableObject {
         self.throttler.delegate = self
     }
 
-    func loadVolume(_ completion: ((Result<Void, SpeakerClientError>) -> Void)? = nil) {
+    func loadVolume(_ completion: ((Result<Void, APIClientError>) -> Void)? = nil) {
         client.loadVolume { result in
             DispatchQueue.main.async {
                 switch result {
