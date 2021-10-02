@@ -76,6 +76,8 @@
 					<integer>1</integer>
 					<key>INIntentParameterMetadata</key>
 					<dict>
+						<key>INIntentParameterMetadataDefaultValue</key>
+						<real>40</real>
 						<key>INIntentParameterMetadataMaximumValue</key>
 						<real>100</real>
 						<key>INIntentParameterMetadataType</key>
