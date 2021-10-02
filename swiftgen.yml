@@ -1,0 +1,6 @@
+strings:
+  inputs: 
+    - SpeakerKnob/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: SpeakerKnob/Source/Library/L10n.swift

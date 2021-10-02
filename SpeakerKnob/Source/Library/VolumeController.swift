@@ -37,7 +37,7 @@ final class VolumeController: ObservableObject {
         self.throttler.delegate = self
     }
 
-    func loadVolume(_ completion: ((Bool) -> Void)? = nil) {
+    func loadVolume(_ completion: ((Result<Void, SpeakerClientError>) -> Void)? = nil) {
         client.loadVolume { result in
             DispatchQueue.main.async {
                 switch result {
@@ -47,13 +47,12 @@ final class VolumeController: ObservableObject {
                     self.queuedVolume = response.volume.speaker.level
                     self.volumeResponse = response
                     self.updateVolumePercentageFromOptimisticVolume()
-                    print(response)
-                    completion?(true)
                 case .failure(let error):
                     print(error)
                     self.volumeResponse = nil
-                    completion?(false)
                 }
+                let mappedResult = result.map { _ in }
+                completion?(mappedResult)
             }
         }
     }
