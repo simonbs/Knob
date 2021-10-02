@@ -74,8 +74,14 @@ private extension ContentView {
     }
 
     private func makeAngularGradient() -> AngularGradient {
-        let colors: [Color] = [.green, .yellow, .orange, .red, .purple]
-        let gradient = Gradient(colors: colors)
+        let gradient = Gradient(stops: [
+            Gradient.Stop(color: .green, location: 0),
+            Gradient.Stop(color: .yellow, location: 0.35),
+            Gradient.Stop(color: .orange, location: 0.5),
+            Gradient.Stop(color: .red, location: 0.6),
+            Gradient.Stop(color: .purple, location: 0.7),
+            Gradient.Stop(color: .indigo, location: 1)
+        ])
         return AngularGradient(gradient: gradient, center: .center, startAngle: .degrees(0), endAngle: .degrees(360))
     }
 }
