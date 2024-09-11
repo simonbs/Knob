@@ -12,4 +12,4 @@ It's really just a single screen with a huge volume knob. Twist the knob to adju
 
 ## Setup
 
-I norder to use the app you must obtain the IP of your Beoplay speaker and set it in [Config.swift](https://github.com/simonbs/Knob/blob/main/KnobKit/Source/Config.swift)
+In order to use the app you must obtain the IP of your Beoplay speaker and set it in [Config.swift](https://github.com/simonbs/Knob/blob/main/KnobKit/Source/Config.swift)
